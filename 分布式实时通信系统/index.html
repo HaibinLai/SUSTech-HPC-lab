@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>分布式实时通信系统 - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">My Docs</a>
+                <a class="navbar-brand" href="..">My Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Welcome to MkDocs</a>
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
                             </li>
                             <li class="nav-item">
-                                <a href="%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/" class="nav-link">分布式实时通信系统</a>
+                                <a href="./" class="nav-link active" aria-current="page">分布式实时通信系统</a>
                             </li>
                         </ul>
 
@@ -49,12 +49,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="%E5%88%86%E5%B8%83%E5%BC%8F%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1%E7%B3%BB%E7%BB%9F/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -76,38 +76,56 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
+            
+            
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<p>时间触发以太网（Time-Triggered Ethernet, TTE）是一种网络通信协议，旨在为实时和关键任务应用提供高可靠性和可预测性。它结合了以太网的灵活性和时间触发系统的确定性。以下是其主要特点和工作原理：</p>
+<h3 id="_1">主要特点</h3>
+<ol>
+<li>
+<p><strong>时间同步</strong>：
+   TTE使用精确的时间同步机制，使网络中所有节点能够在相同的时间基准上进行通信。这通常通过时间戳和时钟同步协议实现。</p>
+</li>
+<li>
+<p><strong>时间触发机制</strong>：
+   网络中的数据传输是基于时间触发的，节点在预定的时间发送消息，这样可以确保在特定时间窗口内传输数据，减少冲突和延迟。</p>
+</li>
+<li>
+<p><strong>混合传输模式</strong>：
+   TTE支持混合模式，可以同时处理实时和非实时数据。实时数据通过时间触发的方式发送，而非实时数据则可以使用传统的以太网方式。</p>
+</li>
+<li>
+<p><strong>高可靠性</strong>：
+   通过冗余设计和可靠的错误检测，TTE可以确保在网络故障或数据丢失的情况下仍能稳定工作。</p>
+</li>
+<li>
+<p><strong>适用于关键任务应用</strong>：
+   TTE被广泛应用于航空航天、汽车、工业自动化等领域，适合那些对延迟、丢包率和确定性要求高的场景。</p>
+</li>
+</ol>
+<h3 id="_2">工作原理</h3>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>
+<p><strong>时间分配</strong>：网络中的带宽被分配给不同的时间槽。每个节点根据时间表在指定时间发送数据，确保不会发生数据碰撞。</p>
+</li>
+<li>
+<p><strong>数据包优先级</strong>：不同的数据包可以设置不同的优先级，确保关键数据在需要时可以优先发送。</p>
+</li>
+<li>
+<p><strong>网络拓扑</strong>：TTE通常运行在标准以太网硬件上，通过添加相应的协议栈来实现时间触发功能。</p>
+</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h3 id="_3">应用场景</h3>
+<ul>
+<li><strong>航空航天</strong>：用于飞行控制系统和传感器数据传输。</li>
+<li><strong>汽车工业</strong>：在高级驾驶辅助系统（ADAS）和自动驾驶车辆中确保关键数据的实时传输。</li>
+<li><strong>工业自动化</strong>：在需要高可靠性和低延迟的工厂自动化系统中使用。</li>
+</ul>
+<p>总体而言，时间触发以太网为实时应用提供了一种高效、可靠的通信解决方案，尤其适用于需要严格时间控制的场合。</p></div>
             </div>
         </div>
 
@@ -115,13 +133,13 @@ docs/
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -186,8 +204,3 @@ docs/
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2024-10-07 02:49:15.175770+00:00
--->
