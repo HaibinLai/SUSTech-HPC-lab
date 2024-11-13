@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.0253249f.min.css">
       
       
 
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#welcome-to-sustech-hpc-lab" class="md-skip">
           跳转至
         </a>
       
@@ -259,20 +259,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#hpc" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      HPC：怎么样算的更快？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HPC：怎么样算的更快？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hpc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      HPC应用领域
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      我们的研究对象
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -331,20 +346,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#hpc" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      HPC：怎么样算的更快？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="HPC：怎么样算的更快？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hpc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      HPC应用领域
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      我们的研究对象
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -366,21 +396,46 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<!-- # Welcome to MkDocs
+
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+
+## Commands
+
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs -h` - Print help message and exit.
+
+## Project layout
+
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files. -->
+
+<h1 id="welcome-to-sustech-hpc-lab">Welcome to SUSTech HPC lab</h1>
+<p>About this page</p>
+<p>本站多数来源于我个人的大学HPC的学习经历。</p>
+<h2 id="hpc">HPC：怎么样算的更快？</h2>
+<p>在当前的计算机科学领域，我们可以大概将CS研究者分为这样两类：AI、System（当然还有很多，比如理论计算机科学，但大部分的研究者的方向如此）。而在System中，有负责存储数据的数据库，负责传输数据的网络（通信、协议）、负责计算机的安全（网络、软件、硬件）、构造计算机的体系结构（RISC-V、GPU）、搭建计算机软件的软件工程与编译器、管理计算机的操作系统...... 以及最后，负责更高效处理数据、更好利用硬件进行计算的并行计算以及高性能计算方向。或者用俗话说，怎么样算的更快？</p>
+<p>从具体来说，可以分为这几个问题：
+1. <strong>高计算能力</strong>：HPC系统通常由多个处理器（CPU）或图形处理单元（GPU）组成，能够并行处理大量计算任务，极大提高计算速度。
+2. <strong>大规模并行处理</strong>：通过并行计算，多个计算任务可以同时进行，显著缩短计算时间。常见的并行方式包括分布式计算和集群计算。
+3. <strong>海量存储</strong>：HPC系统配备高速、大容量的存储设备，用于处理和存储巨大的数据集。
+4. <strong>低延迟和高带宽</strong>：高速网络连接使得各个计算节点之间能够快速交换数据，减少计算过程中的延迟。</p>
+<h3 id="hpc_1">HPC应用领域</h3>
+<ol>
+<li><strong>科学研究</strong>：例如气象模拟、天文计算、物理实验、基因组学、药物研发等领域，HPC能够模拟复杂的自然现象，帮助科学家分析大量数据。</li>
+<li><strong>工程设计与仿真</strong>：包括汽车、飞机、建筑等领域的计算流体力学（CFD）、结构力学等仿真，HPC帮助设计更高效、更安全的产品。</li>
+<li><strong>人工智能与机器学习</strong>：HPC为深度学习、神经网络等AI模型的训练提供强大的计算资源，支持大规模数据的处理与分析。</li>
+</ol>
+<h3 id="_1">我们的研究对象</h3>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>超级计算机</strong>：专门设计用于进行大规模计算的机器，具备极高的计算能力，如美国的“Frontier”和中国的“神威·太湖之光”。</li>
+<li><strong>计算集群</strong>：由多个计算节点（通常是服务器）通过高速网络连接组成，协同处理复杂计算任务。</li>
+<li><strong>云计算平台</strong>：如Amazon Web Services (AWS)、Microsoft Azure等提供的云服务也支持高性能计算，用户可以租用云资源进行计算。</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
 
 
 
@@ -430,7 +485,7 @@ docs/
     <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
